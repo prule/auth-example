@@ -1,0 +1,29 @@
+<div class="padded-top container">
+
+  <table class="table table-striped table-bordered table-hover" id="user-table">
+    <thead>
+    <tr>
+      <th>Timestamp</th>
+      <th>Message</th>
+      <th>Type</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each log in model }}
+      <tr>
+        <td>{{ log.timestamp }}</td>
+        <td>
+          {{ log.message }}
+        </td>
+        <td>
+          {{log.type}}
+        </td>
+      </tr>
+
+    {{/each}}
+    </tbody>
+  </table>
+  {{page-numbers content=content}}
+</div>
+
+{{outlet}}

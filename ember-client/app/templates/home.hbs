@@ -1,0 +1,48 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Authentication example</h1>
+
+    <p>This is a basic example of using OAUTH2 authentication with an Ember front end application and a corresponding
+      Node backend server API.</p>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-4">
+      <h2>OAUTH2</h2>
+
+      <p>The ember application makes use of ember-simple-auth to use Facebook and Google OAUTH2 authentication. Users
+        can log in with their Facebook or Google accounts to
+        access secured resources.</p>
+      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+    </div>
+    <div class="col-md-4">
+      <h2>Node Backend</h2>
+
+      <p>The node server exposes REST endpoints for the Ember application to use. For OAUTH2, it will take the
+        Facebook/Google token supplied by the client,
+        and then use it to retrieve the users details from Facebook/Google. The user details are then stored in the
+        Mongo database, and returned to the Ember client.</p>
+      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+    </div>
+    <div class="col-md-4">
+      <h2>Pageable data</h2>
+
+      <p>To complete the example there is a page which only admin users can access, and demonstrates pagination through
+        data. Data access is via ember-data on the client
+        side, which accesses the Node REST endpoints to page through data.</p>
+      <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+    </div>
+  </div>
+
+  <hr>
+
+  <footer>
+    <p>&copy; Company 2014</p>
+  </footer>
+</div> <!-- /container -->
+
+{{outlet}}
